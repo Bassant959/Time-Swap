@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Swap - الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="{% static ' css/الرئيسية.css ' %}">
+</head>
+<body>
+    <!-- قسم الهيدر -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Time Swap</h1>
+            <nav>
+                <ul>
+                    <li><a href="حسابي.html">حسابي</a></li>
+                    <li><a href="من نحن.html">من نحن</a></li>
+                    <li><a href="HOME.html">تسجيل خروج</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- قسم المهارات المتاحة -->
+    <section class="featured-skills">
+        <div class="container">
+            <h2>المهارات المتاحة</h2>
+            <p> ! تصفح المهارات المتاحة للتبادل وتعرف على الوقت الذي يمكنك توفيره أو الحصول عليه</p>
+            <div class="skills-list">
+                <!-- قائمة المهارات المتاحة -->
+                <div class="skill-item">
+                    <h3>تصميم لوجو</h3>
+                    <p>الوقت: ساعتان</p>
+                    <button class="request-btn">طلب هذه المهارة</button>
+                </div>
+                <div class="skill-item">
+                    <h3>مونتاج فيديو</h3>
+                    <p>الوقت: أربع ساعات</p>
+                    <button class="request-btn">طلب هذه المهارة</button>
+                </div>
+                <div class="skill-item">
+                    <h3>كتابة محتوى</h3>
+                    <p>الوقت: ثلاث ساعات</p>
+                    <button class="request-btn">طلب هذه المهارة</button>
+                </div>
+            </div>
+            <!-- إضافة رابط لعرض قائمة الخدمات -->
+            <p><a href="{% url 'service_list' %}">عرض قائمة الخدمات</a></p> <!-- الرابط هنا -->
+        </div>
+    </section>
+
+    <!-- قسم إضافة مهارتك الخاصة -->
+    <section class="add-skill">
+        <div class="container">
+            <h2>أضف مهارتك</h2>
+            <p>هل تريد تقديم خدمة؟ أضف مهارتك هنا وابدأ في تبادل الوقت!</p>
+            <form action="add_skill.html" method="POST" class="add-skill-form">
+                <input type="text" placeholder="مهارتك (مثل: تصميم لوجو)" required>
+                <input type="number" placeholder="عدد الساعات المطلوبة" required>
+                <textarea placeholder="وصف المهارة أو الخدمة" required></textarea>
+                <button type="submit" class="btn">إضافة المهارة</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- قسم الفوتر -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Time Swap. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

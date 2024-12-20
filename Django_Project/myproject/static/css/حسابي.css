@@ -1,0 +1,139 @@
+/* Basic Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffeaf5; /* خلفية وردية باهتة */
+    color: #5a5a5a;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.account-header {
+    background: linear-gradient(to right, #d43f8d, #ff7ab2);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #ff7ab2;
+}
+
+.account-header h1 {
+    font-size: 2rem;
+}
+
+.account-header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.account-header .navbar ul li {
+    margin: 0 15px;
+}
+
+.account-header .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.account-header .navbar ul li a:hover {
+    color: #ffeaf5;
+}
+
+/* Main Section */
+.account-details {
+    margin: 40px 0;
+}
+
+.balance-section {
+    background: #fff0f8; /* خلفية فاتحة لمربع التفاصيل */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.balance-section h2 {
+    color: #d43f8d;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.balance-amount {
+    font-size: 3rem;
+    color: #7a2455;
+    font-weight: bold;
+}
+
+.next-expiry {
+    color: #777;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.add-time-btn {
+    background: #d43f8d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-time-btn:hover {
+    background: #ff7ab2;
+    transform: scale(1.05);
+}
+
+/* Table Styles */
+.transaction-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.transaction-history table th,
+.transaction-history table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.transaction-history table th {
+    background: #d43f8d;
+    color: #fff;
+}
+
+.transaction-history table tr:nth-child(even) {
+    background: #fff0f8;
+}
+
+.transaction-history table tr:hover {
+    background: #ffe3ed;
+}
+
+/* Footer */
+footer {
+    background: #d43f8d;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}

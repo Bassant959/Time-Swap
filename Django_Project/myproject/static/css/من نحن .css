@@ -1,0 +1,77 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* الهيدر */
+.header {
+    background: linear-gradient(135deg,#ea6fc1,#f6ceeb );
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* محتوى الصفحة */
+.about {
+    padding: 40px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+
+.about h3 {
+    font-size: 2rem;
+    margin-top: 40px;
+    color: black;
+}
+
+/* الفوتر */
+footer {
+    background:linear-gradient(135deg, #ea6fc1,#f6ceeb );
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

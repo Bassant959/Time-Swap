@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حسابي - تفاصيل الحساب</title>
+    <link rel="stylesheet" href="{% static ' css/حسابي.css ' %}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="account-header">
+        <div class="container">
+            <h1>مرحباً بك، <span class="username">[اسم المستخدم]</span></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="الرئيسية.html">الصفحة الرئيسية</a></li>
+                    <li><a href="HOME.html">تسجيل الخروج</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Account Details Section -->
+    <main class="account-details">
+        <div class="container">
+            <!-- Balance Section -->
+            <div class="balance-section">
+                <h2>رصيدك الزمني</h2>
+                <p class="balance-amount">500 دقيقة</p>
+                <p class="next-expiry">آخر تحديث: 2024-12-14</p>
+            </div>
+
+            <!-- Transaction History -->
+            <div class="transaction-history">
+                <h3>سجل المعاملات</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>التاريخ</th>
+                            <th>الحدث</th>
+                            <th>الوقت</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-12-01</td>
+                            <td>إضافة وقت</td>
+                            <td>+100 دقيقة</td>
+                        </tr>
+                        <tr>
+                            <td>2024-12-03</td>
+                            <td>استعمال وقت</td>
+                            <td>-50 دقيقة</td>
+                        </tr>
+                        <!-- Add more rows dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>

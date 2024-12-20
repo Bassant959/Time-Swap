@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href="{% static ' css/انشاء حساب جديد.css ' %}">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <h1>إنشاء حسابك</h1>
+            <p>قم بملء التفاصيل للتسجيل</p>
+            <form action="home.html" method="post">
+                <input type="text" placeholder="اسم المستخدم" required>
+                <input type="email" placeholder="البريد الإلكتروني" required>
+                <input type="password" placeholder="كلمة المرور" required>
+                <input type="password" placeholder="تأكيد كلمة المرور" required>
+                <button type="submit">إنشاء الحساب</button>
+                <p>هل لديك حساب؟ <a href="تسجيل دخول.html">تسجيل الدخول</a></p> <!-- رابط يوجه إلى صفحة تسجيل الدخول -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>

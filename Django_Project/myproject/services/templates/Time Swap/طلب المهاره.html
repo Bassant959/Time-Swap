@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب مهارة - Time Swap</title>
+    <link rel="stylesheet" href="{% static ' css/طلب المهاره.css ' %}">
+</head>
+<body>
+    <!-- قسم الهيدر -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Time Swap</h1>
+            <nav>
+                <ul>
+                    <li><a href="الرئيسية.html">الصفحة الرئيسية</a></li>
+                    <li><a href="حسابي.html"> حسابي </a></li>
+                    <li><a href="HOME.html">تسجيل الخروج</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- قسم تفاصيل المهارة -->
+    <section class="skill-details">
+        <div class="container">
+            <h2>تفاصيل المهارة المطلوبة</h2>
+            <div class="skill-info">
+                <h3>تصميم لوجو</h3>
+                <p><strong>وصف الخدمة:</strong> تصميم لوجو احترافي باستخدام برامج تصميم متقدمة. سيتم تسليم اللوجو بصيغة عالية الجودة بعد ساعة من العمل.</p>
+                <p><strong>الوقت المطلوب:</strong> 1 ساعة</p>
+                <p><strong>الشخص المعروض:</strong> أحمد علي</p>
+            </div>
+
+            <form action="confirm_request.html" method="POST" class="request-form">
+               
+
+                <label for="comments">إضافة تعليق (اختياري):</label>
+                <textarea id="comments" name="comments" placeholder="أضف تعليقاتك هنا"></textarea>
+
+                <button type="submit" class="btn">إتمام الطلب</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- قسم الفوتر -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Time Swap. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>

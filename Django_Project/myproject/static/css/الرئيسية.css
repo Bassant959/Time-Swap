@@ -1,0 +1,196 @@
+/* Basic Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;  /* خلفية فاتحة للحصول على تأثير عصري */
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #d43f8d, #ff7ab2); /* تدرج لوني جذاب */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.header .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    transform: scale(1.1);  /* تأثير تكبير */
+}
+
+/* Featured Skills Section */
+.featured-skills {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ffffff, #f7f7f7);
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.featured-skills h2 {
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.featured-skills .skills-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.featured-skills .skill-item {
+    background: #ecf0f1;
+    padding: 30px;
+    border-radius: 12px;
+    width: 280px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(10px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.featured-skills .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* تأثير الظل على التمرير */
+}
+
+.featured-skills .skill-item h3 {
+    font-size: 1.7rem;
+    color: #34495e;
+}
+
+.featured-skills .skill-item p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+.featured-skills .skill-item .request-btn {
+    background-color: #ff7ab2;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.featured-skills .skill-item .request-btn:hover {
+    background:linear-gradient(135deg, #34495e, #2c3e50);
+    transform: scale(1.1); /* تكبير عند التمرير */
+}
+
+/* Add Skill Section */
+.add-skill {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.add-skill h2 {
+    font-size: 2.8rem;
+    color:#34495e ;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+.add-skill .add-skill-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.add-skill .add-skill-form input,
+.add-skill .add-skill-form textarea {
+    padding: 18px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 2px solid #b0bec5;
+    font-size: 1.1rem;
+    transition: border 0.3s ease-in-out;
+}
+
+.add-skill .add-skill-form input:focus,
+.add-skill .add-skill-form textarea:focus {
+    border-color: #333;  /* تأثير التحديد */
+    outline: none;
+}
+
+.add-skill .add-skill-form .btn {
+    background-color: #ff7ab2;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-skill .add-skill-form .btn:hover {
+    background:linear-gradient(135deg, #34495e, #2c3e50) ;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.1rem;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2rem;
+}

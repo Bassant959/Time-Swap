@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة الخدمات</title>
+    
+    <!-- تحميل مكتبة static -->
+    {% load static %}
+    
+    <!-- تحميل ملف CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>مرحبًا بكم في قائمة الخدمات</h1>
+    </header>
+
+    <!-- قائمة الخدمات -->
+    <section>
+        <h2>الخدمات المتاحة</h2>
+        <ul>
+            {% for service in services %}
+                <li>
+                    <a href="{% url 'service_detail' service.id %}">
+                        {{ service.title }} - {{ service.description }}
+
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>&copy; 2024 Time Swap. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>

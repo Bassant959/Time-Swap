@@ -1,0 +1,122 @@
+/* Basic Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #34495e;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #d43f8d, #ff7ab2);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Skill Details Section */
+.skill-details {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.skill-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skill-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-info h3 {
+    font-size: 1.5rem;
+    color:#34495e ;
+}
+
+.skill-info p {
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+/* Request Form Section */
+.request-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.request-form label {
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.request-form input,
+.request-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.request-form button {
+    background-color:  #d43f8d ;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.request-form button:hover {
+    background-color: #34495e  ;
+}
+
+/* Footer Section */
+footer {
+    background: linear-gradient(135deg, #d43f8d, #ff7ab2);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
